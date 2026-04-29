@@ -1,659 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karan | Video Editor & Content Strategist</title>
-    <meta
-      name="description"
-      content="Portfolio of Karan, a video editor, content creator, and growth strategist working across YouTube, Instagram, and large creative teams."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="noise"></div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan | Video Editor</title>
 
-    <header class="site-header">
-      <a class="logo" href="#home">Karan.</a>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-      <nav class="site-nav">
-        <a href="#about">about</a>
-        <a href="#projects">work</a>
-        <a href="#results">results</a>
-        <a href="#contact">contact</a>
-      </nav>
+<style>
+:root {
+  --bg: #0b0b0b;
+  --text: #ffffff;
+  --muted: #a1a1a1;
+  --line: rgba(255,255,255,0.08);
+}
 
-      <a class="header-cta" href="#contact">start a project</a>
-    </header>
+* {
+  box-sizing: border-box;
+}
 
-    <main id="home">
-      <section class="hero">
-        <div class="hero-top reveal">
-          <span class="status-pill">Available for freelance and long-term collaborations</span>
-          <p class="hero-kicker">Video editor / content creator / growth strategist</p>
-        </div>
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
 
-        <div class="hero-grid">
-          <div class="hero-portrait reveal">
-            <div class="portrait-frame">
-              <img src="me-3.png" alt="Portrait of Karan" />
-            </div>
-          </div>
+/* HEADER */
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
 
-          <div class="hero-copy reveal">
-            <h1>Karan Pardhan</h1>
-            <p class="hero-role">Video editor / content creator / growth strategist</p>
-          </div>
+.logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
 
-          <div class="hero-side reveal">
-            <p>
-              I edit with a creator mindset and lead with a strategist's eye.
-              From storytelling and retention to team operations and channel
-              growth, I help content move with intent.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-solid" href="#projects">view projects</a>
-              <a class="button button-ghost" href="#contact">contact me</a>
-            </div>
-          </div>
-        </div>
+nav {
+  display: flex;
+  gap: 20px;
+  color: var(--muted);
+}
 
-        <div class="hero-panel reveal">
-          <div class="panel-intro">
-            <p class="section-label">Selected highlights</p>
-            <p class="panel-copy">
-              A mix of editing craft, audience understanding, and large-team
-              execution across YouTube and Instagram.
-            </p>
-          </div>
-          <div class="hero-metrics">
-            <article>
-              <span class="metric" data-count="100">0</span>
-              <span class="metric-label">Editors handled in production pipelines</span>
-            </article>
-            <article>
-              <span class="metric" data-count="20">0</span>
-              <span class="metric-label">YouTube and Instagram managers led</span>
-            </article>
-            <article>
-              <span class="metric" data-count="100">0</span>
-              <span class="metric-label">Thousand plus subscribers built on YouTube</span>
-            </article>
-            <article>
-              <span class="metric" data-count="2">0</span>
-              <span class="metric-label">Videos used to monetize a new channel in 2 months</span>
-            </article>
-          </div>
-        </div>
-      </section>
+/* SECTION */
+.section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-      <section class="section tools-section">
-        <div class="section-head reveal">
-          <span class="section-label">Tools I Use</span>
-          <h2>The editing and AI stack I use to create faster and better work.</h2>
-        </div>
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
 
-        <div class="tools-groups">
-          <div class="tools-panel reveal">
-            <p class="tools-group-title">Editing Tools</p>
-            <div class="tools-grid">
-              <article class="tool-chip">
-                <span class="tool-logo tool-logo-image"><img src="premiere-pro-logo.png" alt="Premiere Pro logo" /></span>
-                <span class="tool-name">Premiere Pro</span>
-              </article>
-              <article class="tool-chip">
-                <span class="tool-logo tool-logo-image"><img src="after-effects-logo.png" alt="After Effects logo" /></span>
-                <span class="tool-name">After Effects</span>
-              </article>
-              <article class="tool-chip">
-                <span class="tool-logo tool-logo-image"><img src="photoshop-logo.png" alt="Photoshop logo" /></span>
-                <span class="tool-name">Photoshop</span>
-              </article>
-            </div>
-          </div>
+/* VIDEO GRID */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
-          <div class="tools-panel reveal">
-            <p class="tools-group-title">AI Tools</p>
-            <div class="tools-grid">
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="higgsfield-logo.jpeg" alt="Higgsfield AI logo" /></span><span class="tool-name">Higgsfield AI</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="elevenlabs-logo.jpeg" alt="ElevenLabs logo" /></span><span class="tool-name">ElevenLabs</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="claude-logo.avif" alt="HeyGen logo" /></span><span class="tool-name">HeyGen</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="midjourney-logo.svg" alt="Midjourney logo" /></span><span class="tool-name">Midjourney</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="freepik-logo.png" alt="Freepik logo" /></span><span class="tool-name">Freepik</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="heygen-logo.jpg" alt="Gemini logo" /></span><span class="tool-name">Gemini</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="grok-logo.png" alt="Grok logo" /></span><span class="tool-name">Grok</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="chatgpt-logo.webp" alt="ChatGPT logo" /></span><span class="tool-name">ChatGPT</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="meta-ai-logo.jpg" alt="Meta AI logo" /></span><span class="tool-name">Meta AI</span></article>
-              <article class="tool-chip"><span class="tool-logo tool-logo-image"><img src="gemini-logo.png" alt="Claude logo" /></span><span class="tool-name">Claude</span></article>
-            </div>
-          </div>
-        </div>
-      </section>
+.long-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 
-      <section id="projects" class="section featured-work-section">
-        <div class="section-head reveal">
-          <span class="section-label">Short Form Edits</span>
-          <h2>Fast, high-retention short videos built for instant attention.</h2>
-        </div>
+/* VIDEO CARD */
+.video-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  transition: 0.3s ease;
+  background: #000;
+}
 
-       <div class="video-grid">
+.video-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
 
-  <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/b_pDpjoYcJ0?mute=1&loop=1&playlist=b_pDpjoYcJ0"></iframe>
-    <div class="video-overlay">
-      <span>3D Style</span>
+/* VIDEO */
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 9/16;
+  border: none;
+}
+
+/* LONG FORM */
+.long-grid .video-card iframe {
+  aspect-ratio: 16/9;
+}
+
+/* OVERLAY */
+.video-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+}
+
+/* GRADIENT */
+.video-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Karan.</div>
+  <nav>
+    <span>Work</span>
+    <span>About</span>
+    <span>Contact</span>
+  </nav>
+</header>
+
+<!-- SHORT FORM -->
+<section class="section">
+  <h2>Short Form Edits</h2>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/b_pDpjoYcJ0?mute=1&loop=1&playlist=b_pDpjoYcJ0"></iframe>
+      <div class="video-overlay">3D Style</div>
     </div>
-  </div>
 
-  <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/a1WAUWAIKRg?mute=1&loop=1&playlist=a1WAUWAIKRg"></iframe>
-    <div class="video-overlay">
-      <span>Documentary</span>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/a1WAUWAIKRg?mute=1&loop=1&playlist=a1WAUWAIKRg"></iframe>
+      <div class="video-overlay">Documentary</div>
     </div>
-  </div>
 
-  <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/_qPAUtNM64I?mute=1&loop=1&playlist=_qPAUtNM64I"></iframe>
-    <div class="video-overlay">
-      <span>Engaging Edit</span>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/_qPAUtNM64I?mute=1&loop=1&playlist=_qPAUtNM64I"></iframe>
+      <div class="video-overlay">Engaging</div>
     </div>
+
   </div>
+</section>
 
-</div>
+<!-- LONG FORM -->
+<section class="section">
+  <h2>Long Form Videos</h2>
 
-          <div class="featured-video-card featured-short-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/_qPAUtNM64I?mute=1&loop=1&playlist=_qPAUtNM64I&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="Engaging Style Short"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
+  <div class="video-grid long-grid">
 
-          <article class="featured-work-copy reveal">
-            <span class="tag">Short Form Video</span>
-            <h3>Spiritual Podcast Edit</h3>
-            <p>
-              A podcast-style short edit shaped with a calmer but engaging flow,
-              keeping the message clear while still making the short feel dynamic
-              and watchable on mobile-first platforms.
-            </p>
-            <ul class="detail-list">
-              <li>Podcast short-form edit</li>
-              <li>Message clarity with engaging pacing</li>
-              <li>Built for reels and audience retention</li>
-            </ul>
-          </article>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/RppgFRilXs0"></iframe>
+      <div class="video-overlay">Documentary</div>
+    </div>
 
-          <div class="featured-video-card featured-short-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/xDd5u5Z4IEM?mute=1&loop=1&playlist=xDd5u5Z4IEM&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="Spiritual Podcast Edit"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/xzxGdUDX1vA"></iframe>
+      <div class="video-overlay">AI Documentary</div>
+    </div>
 
-          <article class="featured-work-copy reveal">
-            <span class="tag">Short Form Video</span>
-            <h3>AI Based Edit</h3>
-            <p>
-              A short-form edit built around an AI-led concept, using a more
-              modern visual language, sharper transitions, and a faster rhythm
-              to keep the edit feeling fresh and high-impact.
-            </p>
-            <ul class="detail-list">
-              <li>AI-based concept and execution style</li>
-              <li>Modern transitions and pacing</li>
-              <li>Built for high-impact short-form delivery</li>
-            </ul>
-          </article>
+  </div>
+</section>
 
-          <div class="featured-video-card featured-short-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/HhQcV_dZxho?mute=1&loop=1&playlist=HhQcV_dZxho&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="AI Based Edit"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-
-          <article class="featured-work-copy reveal">
-            <span class="tag">Short Form Video</span>
-            <h3>Motion Graphics (Short)</h3>
-            <p>
-              A short-form motion graphics edit focused on visual rhythm,
-              animated elements, and fast-moving presentation designed to grab
-              attention instantly.
-            </p>
-            <ul class="detail-list">
-              <li>Motion graphics driven short edit</li>
-              <li>Fast visual pacing and animated flow</li>
-              <li>Built for high-impact short-form viewing</li>
-            </ul>
-          </article>
-
-          <div class="featured-video-card featured-short-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/V2lQMERPq08?mute=1&loop=1&playlist=V2lQMERPq08&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="Motion Graphics Short"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-
-      <section class="section featured-work-section long-form-section">
-        <div class="section-head section-head-long reveal">
-          <span class="section-label">Long Form Videos</span>
-          <h2 class="heading">
-            Long-form edits, documentaries,<br />
-            and trailers built for<br />
-            deeper engagement.
-          </h2>
-        </div>
-
-        <div class="featured-work-grid">
-          <article class="featured-work-copy reveal">
-            <span class="tag">Long Form Video</span>
-            <h3>3D Documentary / Part 1</h3>
-            <p>
-              This is one of my long-format editing projects, showing my work on
-              pacing, retention, story flow, and extended viewer engagement
-              beyond short-form cuts.
-            </p>
-            <ul class="detail-list">
-              <li>Long-form editing and pacing</li>
-              <li>Retention-focused storytelling</li>
-              <li>Built for YouTube-style watch time</li>
-            </ul>
-          </article>
-
-          <div class="featured-video-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/RppgFRilXs0?mute=1&loop=1&playlist=RppgFRilXs0&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="3D Documentary Part 1"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-
-          <article class="featured-work-copy reveal">
-            <span class="tag">Long Form Video</span>
-            <h3>3D Documentary / Part 2</h3>
-            <p>
-              A second long-format piece from the same documentary-style editing
-              direction, focused on maintaining flow, visual interest, and
-              stronger long-form viewing rhythm.
-            </p>
-            <ul class="detail-list">
-              <li>Long-form storytelling continuity</li>
-              <li>Designed for deeper viewer retention</li>
-              <li>Structured for a cinematic documentary feel</li>
-            </ul>
-          </article>
-
-          <div class="featured-video-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/2uyXJBt7eKE?mute=1&loop=1&playlist=2uyXJBt7eKE&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="3D Documentary Part 2"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-
-          <article class="featured-work-copy reveal">
-            <span class="tag">Long Form Video</span>
-            <h3>AI Documentary</h3>
-            <p>
-              A long-form documentary-style piece built around AI-focused
-              storytelling, structured for deeper attention, clarity, and
-              visual pacing over an extended runtime.
-            </p>
-            <ul class="detail-list">
-              <li>AI-focused documentary storytelling</li>
-              <li>Long-form structure and pacing control</li>
-              <li>Built for sustained viewer engagement</li>
-            </ul>
-          </article>
-
-          <div class="featured-video-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/xzxGdUDX1vA?mute=1&loop=1&playlist=xzxGdUDX1vA&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="AI Documentary"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-
-          <article class="featured-work-copy reveal">
-            <span class="tag">YouTube Documentary</span>
-            <h3>Cinematic Documentary</h3>
-            <p>
-              A separate cinematic documentary reference published on YouTube,
-              included here as a distinct portfolio piece instead of replacing
-              the AI Documentary edit.
-            </p>
-            <ul class="detail-list">
-              <li>Cinematic documentary presentation</li>
-              <li>External YouTube feature</li>
-              <li>Separate from the AI documentary edit</li>
-            </ul>
-          </article>
-
-          <div class="featured-video-card reveal">
-            <iframe
-              src="https://www.youtube.com/embed/WlW8MxreD14?mute=1&loop=1&playlist=WlW8MxreD14&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-              title="Cinematic Documentary"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-
-          <article class="featured-work-copy reveal">
-            <span class="tag">Podcast Trailer</span>
-            <h3>Podcast Intro Trailer</h3>
-            <p>
-              A promo-style podcast trailer cut with voice-over, built to create
-              curiosity, set tone, and establish the visual identity before the
-              full episode starts.
-            </p>
-            <ul class="detail-list">
-              <li>Trailer pacing and suspense build-up</li>
-              <li>Voice-over synced intro structure</li>
-              <li>Designed for a strong first impression</li>
-            </ul>
-          </article>
-
-          <div class="featured-video-card reveal">
-            <video controls preload="metadata">
-              <source src="podcast-trailer.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" class="section experience-section">
-        <div class="section-head reveal">
-          <span class="section-label">Experience / Work</span>
-          <h2>Trusted by brands, creators, and athlete-led pages.</h2>
-        </div>
-
-        <p class="section-subcopy reveal">
-          From major content ecosystems to creator-led channels, I have worked
-          across audiences, operations, and performance-focused content systems.
-        </p>
-
-        <div class="logo-marquee reveal">
-          <div class="marquee-track">
-            <article class="logo-card">
-              <div class="logo-badge badge-pw">
-                <img src="physics-wallah-logo.png" alt="Physics Wallah logo" />
-              </div>
-              <h3>Physics Wallah</h3>
-              <p>India's biggest educational brand</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-g2v">
-                <img src="grow2viral-logo.png" alt="Grow2Viral logo" />
-              </div>
-              <h3>Grow2Viral</h3>
-              <p>Marketing agency</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-athlete">
-                <img src="channel-100k-logo.jpeg" alt="100K YouTube channel logo" />
-              </div>
-              <h3>Destructive Machine</h3>
-              <p>100K+ subscribers built</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-athlete">
-                <img src="me-3.png" alt="Karan Pardhan YouTube channel" />
-              </div>
-              <h3>Karan Pardhan</h3>
-              <p>My YT channel / monetized with 2 videos in 1.5 months</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-athlete">
-                <img src="anshul-jubli.jpg" alt="Anshul Jubli" />
-              </div>
-              <h3>Anshul Jubli</h3>
-              <p>800K+ followers</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-athlete">
-                <img src="puja-tomar.jpg" alt="Puja Tomar" />
-              </div>
-              <h3>Puja Tomar</h3>
-              <p>500K+ followers</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-athlete">
-                <img src="owais-yaqoob.jpg" alt="Owais Yaqoob" />
-              </div>
-              <h3>Owais Yaqoob</h3>
-              <p>600K+ followers</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-athlete">
-                <img src="sumit-kumar.jpg" alt="Sumit Kumar" />
-              </div>
-              <h3>Sumit Kumar</h3>
-              <p>200K+ followers</p>
-            </article>
-            <article class="logo-card">
-              <div class="logo-badge badge-athlete">
-                <img src="pawan-maan.jpg" alt="Pawan Maan" />
-              </div>
-              <h3>Pawan Maan</h3>
-              <p>160K+ followers</p>
-            </article>
-
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-pw">
-                <img src="physics-wallah-logo.png" alt="" />
-              </div>
-              <h3>Physics Wallah</h3>
-              <p>India's biggest educational brand</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-g2v">
-                <img src="grow2viral-logo.png" alt="" />
-              </div>
-              <h3>Grow2Viral</h3>
-              <p>Marketing agency</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-athlete">
-                <img src="channel-100k-logo.jpeg" alt="" />
-              </div>
-              <h3>Destructive Machine</h3>
-              <p>100K+ subscribers built</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-athlete">
-                <img src="me-3.png" alt="" />
-              </div>
-              <h3>Karan Pardhan</h3>
-              <p>My YT channel / monetized with 2 videos in 1.5 months</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-athlete">
-                <img src="anshul-jubli.jpg" alt="" />
-              </div>
-              <h3>Anshul Jubli</h3>
-              <p>800K+ followers</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-athlete">
-                <img src="puja-tomar.jpg" alt="" />
-              </div>
-              <h3>Puja Tomar</h3>
-              <p>500K+ followers</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-athlete">
-                <img src="owais-yaqoob.jpg" alt="" />
-              </div>
-              <h3>Owais Yaqoob</h3>
-              <p>600K+ followers</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-athlete">
-                <img src="sumit-kumar.jpg" alt="" />
-              </div>
-              <h3>Sumit Kumar</h3>
-              <p>200K+ followers</p>
-            </article>
-            <article class="logo-card" aria-hidden="true">
-              <div class="logo-badge badge-athlete">
-                <img src="pawan-maan.jpg" alt="" />
-              </div>
-              <h3>Pawan Maan</h3>
-              <p>160K+ followers</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="experience-notes reveal">
-          <article class="experience-note">
-            <h3>Physics Wallah ecosystem</h3>
-            <p>
-              Worked in a content environment connected with Physics Wallah,
-              contributing around one of India's biggest educational brands.
-            </p>
-          </article>
-          <article class="experience-note">
-            <h3>Grow2Viral / Superlead</h3>
-            <p>
-              Worked with Grow2Viral, a marketing agency, as a superlead handling
-              around 10 YouTube managers, 10 Instagram managers, and roughly 80
-              to 90 editors in execution workflows.
-            </p>
-          </article>
-          <article class="experience-note">
-            <h3>Own channel growth</h3>
-            <p>
-              Built my own channel, Destructive Machine, to 100K+ subscribers,
-              and currently monetized my own YouTube channel, Karan Pardhan,
-              within 1.5 months using just 2 videos.
-            </p>
-          </article>
-          <article class="experience-note">
-            <h3>Creator and athlete collaborations</h3>
-            <p>
-              Collaborated with multiple athletes and creator-led pages, helping
-              build content across high-visibility personal brands and combat
-              sports audiences.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="results" class="section results-section">
-        <div class="section-head reveal">
-          <span class="section-label">Results</span>
-          <h2>Proof built through audience growth and team scale.</h2>
-        </div>
-
-        <div class="results-grid">
-          <article class="result-card reveal">
-            <p class="result-value">100K+</p>
-            <h3>Audience built</h3>
-            <p>
-              Scaled a YouTube channel past one lakh subscribers through content
-              planning, packaging, and performance-first execution.
-            </p>
-          </article>
-
-          <article class="result-card reveal">
-            <p class="result-value">2 Months</p>
-            <h3>Monetization speed</h3>
-            <p>
-              Monetized a fresh YouTube channel in 2 months with just 2 videos,
-              showing sharp content selection and efficient growth thinking.
-            </p>
-          </article>
-
-          <article class="result-card reveal">
-            <p class="result-value">100+</p>
-            <h3>Creative scale</h3>
-            <p>
-              Worked across large editor and manager teams while maintaining
-              execution quality and operational clarity.
-            </p>
-          </article>
-        </div>
-
-        <div class="athlete-strip reveal">
-          <span class="section-label">Network</span>
-          <div class="athlete-list">
-            <span>Anshul Jubli / 800K+</span>
-            <span>Puja Tomar / 500K+</span>
-            <span>Owais Yaqoob / 600K+</span>
-            <span>Sumit Kumar / 200K+</span>
-            <span>Pawan Maan / 160K+</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section process-section">
-        <div class="section-head reveal">
-          <span class="section-label">Process</span>
-          <h2>My approach to content execution.</h2>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-card reveal">
-            <span>01</span>
-            <h3>Understand the audience</h3>
-            <p>Every cut starts with clarity on who the content is for and what it should trigger.</p>
-          </article>
-          <article class="process-card reveal">
-            <span>02</span>
-            <h3>Shape the hook and pacing</h3>
-            <p>I focus on viewer retention, emotional rhythm, and platform-native storytelling.</p>
-          </article>
-          <article class="process-card reveal">
-            <span>03</span>
-            <h3>Build systems that scale</h3>
-            <p>For teams and agencies, I bring structure to the content pipeline so output can grow without chaos.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section reveal">
-        <span class="section-label">Contact</span>
-        <h2>Looking for someone who can edit, strategize, and scale?</h2>
-        <p>
-          I help brands, creators, and content teams turn raw footage and ideas
-          into audience growth.
-        </p>
-        <div class="contact-actions">
-          <a class="button button-solid" href="mailto:info.karanpardhan@gmail.com">info.karanpardhan@gmail.com</a>
-          <a class="button button-ghost" href="https://instagram.com" target="_blank" rel="noreferrer">instagram</a>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
-
