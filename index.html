@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karan Portfolio</title>
+<title>Karan | Video Editor</title>
 
 <style>
 body {
@@ -13,14 +13,14 @@ body {
   color: white;
 }
 
-/* SECTION TITLES */
+/* HEADINGS */
 h2 {
   text-align: center;
-  margin-top: 60px;
+  margin: 60px 0 20px;
   font-size: 32px;
 }
 
-/* SHORT VIDEOS GRID */
+/* SHORT VIDEOS */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -46,12 +46,19 @@ h2 {
   display: grid;
   gap: 40px;
   padding: 40px;
+  justify-items: center;
 }
 
-.video-wide iframe {
+.video-container {
   width: 100%;
+  max-width: 900px;
   aspect-ratio: 16 / 9;
-  border-radius: 18px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
   border: none;
   box-shadow: 0 10px 40px rgba(0,0,0,0.7);
 }
@@ -64,17 +71,17 @@ h2 {
 
 <div class="video-grid">
 
-<iframe src="https://www.youtube.com/embed/b_pDpjoYcJ0?autoplay=1&mute=1&loop=1&playlist=b_pDpjoYcJ0&controls=0&playsinline=1" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/b_pDpjoYcJ0?autoplay=1&mute=1&loop=1&playlist=b_pDpjoYcJ0&controls=0&playsinline=1" allow="autoplay"></iframe>
 
-<iframe src="https://www.youtube.com/embed/a1WAUWAIKRg?autoplay=1&mute=1&loop=1&playlist=a1WAUWAIKRg&controls=0&playsinline=1" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/a1WAUWAIKRg?autoplay=1&mute=1&loop=1&playlist=a1WAUWAIKRg&controls=0&playsinline=1" allow="autoplay"></iframe>
 
-<iframe src="https://www.youtube.com/embed/_qPAUtNM64I?autoplay=1&mute=1&loop=1&playlist=_qPAUtNM64I&controls=0&playsinline=1" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/_qPAUtNM64I?autoplay=1&mute=1&loop=1&playlist=_qPAUtNM64I&controls=0&playsinline=1" allow="autoplay"></iframe>
 
-<iframe src="https://www.youtube.com/embed/xDd5u5Z4IEM?autoplay=1&mute=1&loop=1&playlist=xDd5u5Z4IEM&controls=0&playsinline=1" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/xDd5u5Z4IEM?autoplay=1&mute=1&loop=1&playlist=xDd5u5Z4IEM&controls=0&playsinline=1" allow="autoplay"></iframe>
 
-<iframe src="https://www.youtube.com/embed/HhQcV_dZxho?autoplay=1&mute=1&loop=1&playlist=HhQcV_dZxho&controls=0&playsinline=1" allow="autoplay; fullscreen"></iframe>
+<!-- Removed broken video -->
 
-<iframe src="https://www.youtube.com/embed/V2lQMERPq08?autoplay=1&mute=1&loop=1&playlist=V2lQMERPq08&controls=0&playsinline=1" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/V2lQMERPq08?autoplay=1&mute=1&loop=1&playlist=V2lQMERPq08&controls=0&playsinline=1" allow="autoplay"></iframe>
 
 </div>
 
@@ -83,11 +90,17 @@ h2 {
 
 <div class="video-wide">
 
-<iframe src="https://www.youtube.com/embed/RppgFRilXs0?mute=1" allow="autoplay; fullscreen"></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/RppgFRilXs0?mute=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
 
-<iframe src="https://www.youtube.com/embed/2uyXJBt7eKE?mute=1" allow="autoplay; fullscreen"></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/2uyXJBt7eKE?mute=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
 
-<iframe src="https://www.youtube.com/embed/xzxGdUDX1vA?mute=1" allow="autoplay; fullscreen"></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/xzxGdUDX1vA?mute=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
 
 </div>
 
